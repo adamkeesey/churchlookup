@@ -1,0 +1,15 @@
+<script type="text/javascript" data-id="tp-widget"
+    data-token="93n52Es4EJCoDSa53TJ065UF4460oTjDMlw5I88W4V4f32J08U8J6a03X7R4G4yk"
+    src="https://widget.tripproximity.com/js/widget.min.js"></script>
+<div class="tp-widget" id="tp-widget"></div>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    tripWidget({
+        headerText: "Your trip benefits " + urlParams.get('churchName'),
+
+        refId: 7028,
+        refClickId: "COGIC-" + urlParams.get('churchName')
+    })
+</script>

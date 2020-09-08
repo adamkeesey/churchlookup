@@ -1,0 +1,16 @@
+<script type="text/javascript" data-id="tp-widget"
+    data-token="2iH2SW4947408EBFK5J3nE8kV50Z0nb8o7EzBR4AalL5Ms545iNlEszEb24gw3P0"
+    src="https://widget.tripproximity.com/js/widget.min.js"></script>
+<div class="tp-widget" id="tp-widget"></div>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    tripWidget({
+        headerText: "Plan to visit " + urlParams.get('churchName'),
+        poiName: urlParams.get('churchName'),
+        address: urlParams.get('address'),
+        refId: 7028,
+        refClickId: "COGIC-" + urlParams.get('churchName')
+    })
+</script>
